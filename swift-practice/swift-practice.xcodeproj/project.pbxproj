@@ -15,6 +15,7 @@
 		4218422626157923002BA6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4218422426157923002BA6DC /* LaunchScreen.storyboard */; };
 		4218423126157923002BA6DC /* swift_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218423026157923002BA6DC /* swift_practiceTests.swift */; };
 		4218423C26157923002BA6DC /* swift_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218423B26157923002BA6DC /* swift_practiceUITests.swift */; };
+		42BF3D3A2617FD310062AB87 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BF3D392617FD310062AB87 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4218423726157923002BA6DC /* swift-practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-practiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4218423B26157923002BA6DC /* swift_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_practiceUITests.swift; sourceTree = "<group>"; };
 		4218423D26157923002BA6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BF3D392617FD310062AB87 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4218422226157923002BA6DC /* Assets.xcassets */,
 				4218422426157923002BA6DC /* LaunchScreen.storyboard */,
 				4218422726157923002BA6DC /* Info.plist */,
+				42BF3D392617FD310062AB87 /* DetailController.swift */,
 			);
 			path = "swift-practice";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BF3D3A2617FD310062AB87 /* DetailController.swift in Sources */,
 				4218421E26157923002BA6DC /* ViewController.swift in Sources */,
 				4218421A26157923002BA6DC /* AppDelegate.swift in Sources */,
 				4218421C26157923002BA6DC /* SceneDelegate.swift in Sources */,
