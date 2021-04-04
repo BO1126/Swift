@@ -40,6 +40,31 @@ print(sayHelloToFriends(me: "jungwoo", friends: "jinhyen","byengwn","sanghyen"))
 //nil 값이나 아무 값도 넣지 않으면 에러가 남
 print(sayHelloToFriends(me: "jungwoo"))
 
+//스위프트는 함수형 프로그래밍 패러다임을 포함하는 다중 패러다임 언어입니다.
+//스위프트의 함수는 일급 객체이므로 변수, 상수 등에 저장이 가능하고
+//매개변수를 통해 전달도 가능합니다.
+
+//MARK: 함수의 타입표현
+//반환타입 생략 불가
+var someFunction : (String,String) -> Void = greeting(to:from:)
+someFunction("eric","jungwoo") //함수라는 타입을 가진 변수
+
+someFunction = greeting(friend:me:) //이미 함수 타입으로 선언해준 변수에 다른 함수를 할당해줄때
+someFunction("eric","jungwoo")
+//들어있는 매개변수의 타입이 다르면 할당해줄 수 없다.
+//someFunction = sayHelloToFriends(me:friends:) 이 경우에도 같은 String 타입이긴 하지만 friends가 가변 매개변수이기 때문에 불가능하다.
+
+
+//runAnother이라는 함수에 function이라는 함수 타입을 가진 매개변수를 선언해서 함수를 실행할때 다른 함수를 매개변수 안에 넣어서 사용한다.
+func runAnother(function:(String,String) -> Void){
+    function("jenny","mike")
+}
+
+runAnother(function: greeting(friend:me:))
+
+runAnother(function: someFunction)
+
+
 
 
 
